@@ -179,6 +179,7 @@
 					<artifactId>maven-sling-plugin</artifactId>
 					<version>2.1.0</version>
 					<configuration>
+						<targetURL>https://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
 						<username>${crx.username}</username>
 						<password>${crx.password}</password>
 					</configuration>
@@ -189,6 +190,7 @@
 					<version>0.0.20</version>
 					<extensions>true</extensions>
 					<configuration>
+						<targetURL>https://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
 						<failOnError>true</failOnError>
 						<username>${crx.username}</username>
 						<password>${crx.password}</password>
@@ -244,9 +246,6 @@
 								<goals>
 									<goal>install</goal>
 								</goals>
-								<configuration>
-							        <targetURL>https://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
-                                                                 </configuration>
 							</execution>
 						</executions>
 					</plugin>
