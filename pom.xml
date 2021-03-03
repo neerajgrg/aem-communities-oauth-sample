@@ -244,6 +244,9 @@
 								<goals>
 									<goal>install</goal>
 								</goals>
+								<configuration>
+							        <targetURL>https://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                                                                 </configuration>
 							</execution>
 						</executions>
 					</plugin>
