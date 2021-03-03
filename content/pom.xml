@@ -73,7 +73,7 @@
 							<target>/apps/cq-social-sample-oauth-provider/install</target>
 						</embedded>
 					</embeddeds>
-					<targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+					<targetURL>${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -114,7 +114,7 @@
 									<goal>install</goal>
 								</goals>
 								<configuration>
-									<targetURL>http://${publish.crx.host}:${publish.crx.port}/crx/packmgr/service.jsp</targetURL>
+									<targetURL>${publish.crx.host}:${publish.crx.port}/crx/packmgr/service.jsp</targetURL>
 									<username>${publish.crx.username}</username>
 									<password>${publish.crx.password}</password>
 								</configuration>
